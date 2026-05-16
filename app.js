@@ -12,18 +12,18 @@ const type = document.getElementById('type');
 const localStorageTransactions = JSON.parse(localStorage.getItem('transactions'));
 let transactions = localStorageTransactions !== null ? localStorageTransactions : [];
 
-// 1. Tranzakciók megjelenítése a DOM-ban    BALAZS
+// 1. Tranzakciók megjelenítése a DOM-ban  ----  BALAZS
 function renderList() {
 list.innerHTML = '';
 transactions.forEach(addTransactionDOM);
 updateValues();
 }
 
-// 2. HTML elem létrehozása egy tranzakcióhoz VIVI
+// 2. HTML elem létrehozása egy tranzakcióhoz --- VIVI
 function addTransactionDOM(transaction) {
 const li = document.createElement('li');
 
-// Stílus hozzáadása a típus alapján VIVI
+// Stílus hozzáadása a típus alapján --- VIVI
 li.classList.add(transaction.type);
 
 // Előjel beállítása VIVI
