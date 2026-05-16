@@ -77,7 +77,7 @@ type: typeValue
 
 transactions.push(transaction);
 
-// Mezők alaphelyzetbe állítása BALAZS
+// Mezők alaphelyzetbe állítása --- BALAZS
 text.value = '';
 amount.value = '';
 
@@ -85,19 +85,19 @@ updateLocalStorage();
 renderList();
 }
 
-// 5. Tranzakció törlése VIVI
+// 5. Tranzakció törlése  --- VIVI
 function deleteTransaction(id) {
 transactions = transactions.filter(transaction => transaction.id !== id);
 updateLocalStorage();
 renderList();
 }
 
-// 6. Állapotmegőrzés VIVI
+// 6. Állapotmegőrzés --- VIVI
 function updateLocalStorage() {
 localStorage.setItem('transactions', JSON.stringify(transactions));
 }
 
-// Eseményfigyelő az űrlaphoz VIVI
+// Eseményfigyelő az űrlaphoz --- VIVI
 form.addEventListener('submit', addTransaction);
 
 // Alkalmazás indítása VIVI
