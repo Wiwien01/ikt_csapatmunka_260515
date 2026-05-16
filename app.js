@@ -55,9 +55,9 @@ money_plus.innerText = `+${incomeTotal} Ft`;
 money_minus.innerText = `-${expenseTotal} Ft`;
 }
 
-// 4. Új tranzakció hozzáadása (Event Handling) BALAZS
+// 4. Új tranzakció hozzáadása (Event Handling) --- BALAZS
 function addTransaction(e) {
-e.preventDefault(); // Ne töltsön újra az oldal
+e.preventDefault(); // Ne töltsön újra az oldal --- 
 
 const textValue = text.value.trim();
 const amountValue = Number(amount.value);
@@ -69,7 +69,7 @@ return;
 }
 
 const transaction = {
-id: Date.now(), // Egyedi azonosító
+id: Date.now(), // Egyedi azonosító --- 
 text: textValue,
 amount: amountValue,
 type: typeValue
