@@ -10,7 +10,14 @@ const type = document.getElementById('type');
 
 // Állapot (State) betöltése LocalStorage-ből VIVI
 const localStorageTransactions = JSON.parse(localStorage.getItem('transactions'));
-let trans
+let transactions = localStorageTransactions !== null ? localStorageTransactions : [];
+
+// 1. Tranzakciók megjelenítése a DOM-ban    BALAZS
+function renderList() {
+list.innerHTML = '';
+transactions.forEach(addTransactionDOM);
+updateValues();
+}
 
 // 2. HTML elem létrehozása egy tranzakcióhoz VIVI
 function addTransactionDOM(transaction) {
@@ -31,7 +38,22 @@ list.appendChild(li);
 }
 
 // 3. Egyenlegek kiszámítása (Array .reduce() és .filter() használata) BALAZS
+function updateValues() {
+const incomeTotal = transactions
+.filter(item => item.type === 'income')
+.reduce((acc, item) => (acc += item.amount), 0);
 
+const expenseTotal = transactions
+.filter(item => item.type === 'expense')
+.reduce((acc, item) => (acc += item.amount), 0);
+
+const total = incomeTotal - expenseTotal;
+
+// DOM frissítése VIVI
+balance.innerText = `${total} Ft`;
+money_plus.innerText = `+${incomeTotal} Ft`;
+money_minus.innerText = `-${expenseTotal} Ft`;
+}
 
 // 4. Új tranzakció hozzáadása (Event Handling) BALAZS
 function addTransaction(e) {
@@ -70,3 +92,13 @@ updateLocalStorage();
 renderList();
 }
 
+// 6. Állapotmegőrzés VIVI
+function updateLocalStorage() {
+localStorage.setItem('transactions', JSON.stringify(transactions));
+}
+
+// Eseményfigyelő az űrlaphoz VIVI
+form.addEventListener('submit', addTransaction);
+
+// Alkalmazás indítása VIVI
+renderList();
