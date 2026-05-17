@@ -55,27 +55,6 @@ money_plus.innerText = `+${incomeTotal} Ft`;
 money_minus.innerText = `-${expenseTotal} Ft`;
 }
 
-// 4. Új tranzakció hozzáadása (Event Handling) --- BALAZS
-function addTransaction(e) {
-e.preventDefault(); // Ne töltsön újra az oldal --- 
-
-const textValue = text.value.trim();
-const amountValue = Number(amount.value);
-const typeValue = type.value;
-
-if (textValue === '' || amountValue <= 0) {
-alert('Kérlek adj meg egy érvényes nevet és pozitív összeget!');
-return;
-}
-
-const transaction = {
-id: Date.now(), // Egyedi azonosító 
-text: textValue,
-amount: amountValue,
-type: typeValue
-};
-
-transactions.push(transaction);
 
 // Mezők alaphelyzetbe állítása --- BALAZS
 text.value = '';
