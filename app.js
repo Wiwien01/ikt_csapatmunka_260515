@@ -1,4 +1,23 @@
+// DOM Elemek kiválasztása --- VIVI
+const balance = document.getElementById('balance');
+const money_plus = document.getElementById('money-plus');
+const money_minus = document.getElementById('money-minus');
+const list = document.getElementById('list');
+const form = document.getElementById('form');
+const text = document.getElementById('text');
+const amount = document.getElementById('amount');
+const type = document.getElementById('type');
 
+// Állapot (State) betöltése LocalStorage-ből --- VIVI
+const localStorageTransactions = JSON.parse(localStorage.getItem('transactions'));
+let transactions = localStorageTransactions !== null ? localStorageTransactions : [];
+
+// 1. Tranzakciók megjelenítése a DOM-ban  ----  BALAZS
+function renderList() {
+list.innerHTML = '';
+transactions.forEach(addTransactionDOM);
+updateValues();
+}
 
 // 2. HTML elem létrehozása egy tranzakcióhoz --- VIVI
 function addTransactionDOM(transaction) {
