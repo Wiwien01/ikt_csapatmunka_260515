@@ -12,7 +12,7 @@ const type = document.getElementById('type');
 const localStorageTransactions = JSON.parse(localStorage.getItem('transactions'));
 let transactions = localStorageTransactions !== null ? localStorageTransactions : [];
 
-// 1. Tranzakciók megjelenítése a DOM-ban  --- BALAZS l
+// 1. Tranzakciók megjelenítése a DOM-ban  --- BALAZS 
 function renderList() {
 list.innerHTML = '';
 transactions.forEach(addTransactionDOM);
