@@ -37,7 +37,7 @@ ${transaction.text}
 list.appendChild(li);
 }
 
-// 3. Egyenlegek kiszámítása (Array .reduce() és .filter() használata) BALAZS
+// 3. Egyenlegek kiszámítása (Array .reduce() és .filter() használata) --- BALAZS
 function updateValues() {
 const incomeTotal = transactions
 .filter(item => item.type === 'income')
