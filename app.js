@@ -69,7 +69,7 @@ return;
 }
 
 const transaction = {
-id: Date.now(), 
+id: Date.now(), // Egyedi azonosító 
 text: textValue,
 amount: amountValue,
 type: typeValue
@@ -100,5 +100,5 @@ localStorage.setItem('transactions', JSON.stringify(transactions));
 // Eseményfigyelő az űrlaphoz --- VIVI
 form.addEventListener('submit', addTransaction);
 
-// Alkalmazás indítása VIVI
+
 renderList();
