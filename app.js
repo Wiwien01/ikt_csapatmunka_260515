@@ -12,12 +12,6 @@ const type = document.getElementById('type');
 const localStorageTransactions = JSON.parse(localStorage.getItem('transactions'));
 let transactions = localStorageTransactions !== null ? localStorageTransactions : [];
 
-// 1. Tranzakciók megjelenítése a DOM-ban  
-function renderList() {
-list.innerHTML = '';
-transactions.forEach(addTransactionDOM);
-updateValues();
-}
 
 // 2. HTML elem létrehozása egy tranzakcióhoz --- VIVI
 function addTransactionDOM(transaction) {
