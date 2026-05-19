@@ -77,7 +77,7 @@ type: typeValue
 
 transactions.push(transaction);
 
-// Mezők alaphelyzetbe állítása --- BALAZS
+
 text.value = '';
 amount.value = '';
 
