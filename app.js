@@ -26,7 +26,7 @@ const li = document.createElement('li');
 // Stílus hozzáadása a típus alapján --- VIVI
 li.classList.add(transaction.type);
 
-
+// Előjel beállítása VIVI
 const sign = transaction.type === 'income' ? '+' : '-';
 
 li.innerHTML = `
@@ -69,7 +69,7 @@ return;
 }
 
 const transaction = {
-id: Date.now(), // Egyedi azonosító 
+id: Date.now(), 
 text: textValue,
 amount: amountValue,
 type: typeValue
