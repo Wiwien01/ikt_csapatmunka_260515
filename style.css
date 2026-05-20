@@ -67,14 +67,7 @@ display: inline-block;
 margin: 10px 0 5px;
 }
 
-input, select {
-border: 1px solid #ccc;
-border-radius: 4px;
-display: block;
-font-size: 16px;
-padding: 10px;
-width: 100%;
-}
+
 
 .btn {
 cursor: pointer;
@@ -98,6 +91,17 @@ list-style-type: none;
 margin-bottom: 40px;
 }
 
+.list li {
+background-color: #fff;
+box-shadow: var(--box-shadow);
+color: #333;
+display: flex;
+justify-content: space-between;
+position: relative;
+padding: 10px;
+margin: 10px 0;
+border-radius: 4px;
+}
 
 .list li.income { border-left: 5px solid var(--green); }
 .list li.expense { border-left: 5px solid var(--red); }
