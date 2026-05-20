@@ -19,9 +19,7 @@ transactions.forEach(addTransactionDOM);
 updateValues();
 }
 
-// 2. HTML elem létrehozása egy tranzakcióhoz --- VIVI
-function addTransactionDOM(transaction) {
-const li = document.createElement('li');
+
 
 // Stílus hozzáadása a típus alapján --- VIVI
 li.classList.add(transaction.type);
