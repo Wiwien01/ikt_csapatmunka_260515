@@ -98,17 +98,6 @@ list-style-type: none;
 margin-bottom: 40px;
 }
 
-.list li {
-background-color: #fff;
-box-shadow: var(--box-shadow);
-color: #333;
-display: flex;
-justify-content: space-between;
-position: relative;
-padding: 10px;
-margin: 10px 0;
-border-radius: 4px;
-}
 
 .list li.income { border-left: 5px solid var(--green); }
 .list li.expense { border-left: 5px solid var(--red); }
