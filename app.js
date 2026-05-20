@@ -49,7 +49,11 @@ const expenseTotal = transactions
 
 const total = incomeTotal - expenseTotal;
 
-
+// DOM frissítése VIVI
+balance.innerText = `${total} Ft`;
+money_plus.innerText = `+${incomeTotal} Ft`;
+money_minus.innerText = `-${expenseTotal} Ft`;
+}
 
 // 4. Új tranzakció hozzáadása (Event Handling) --- BALAZS
 function addTransaction(e) {
