@@ -69,7 +69,7 @@ return;
 }
 
 const transaction = {
-id: Date.now(), // Egyedi azonosító --- VIVI
+id: Date.now(), // Egyedi azonosító 
 text: textValue,
 amount: amountValue,
 type: typeValue
