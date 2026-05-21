@@ -1,9 +1,4 @@
-:root {
---box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
---green: #2ecc71;
---red: #c0392b;
---bg-color: #f9f9f9;
-}
+
 
 * {
 box-sizing: border-box;
