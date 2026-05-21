@@ -24,6 +24,10 @@ width: 100%;
 max-width: 400px;
 }
 
+h1, h2, h3, h4 {
+margin-bottom: 10px;
+text-align: center;
+}
 
 h3 {
 border-bottom: 1px solid #bbb;
