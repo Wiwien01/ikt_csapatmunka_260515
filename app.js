@@ -23,7 +23,7 @@ updateValues();
 function addTransactionDOM(transaction) {
 const li = document.createElement('li');
 
-// Stílus hozzáadása a típus alapján --- VIVI
+// Stílus hozzáadása a típus alapján --- VIVI cehiwcewnne 
 li.classList.add(transaction.type);
 
 // Előjel beállítása VIVI
