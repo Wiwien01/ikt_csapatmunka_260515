@@ -100,5 +100,5 @@ localStorage.setItem('transactions', JSON.stringify(transactions));
 // Eseményfigyelő az űrlaphoz --- VIVI
 form.addEventListener('submit', addTransaction);
 
-// Alkalmazás indítása VIVI cencujwncje
+// Alkalmazás indítása VIVI
 renderList();
