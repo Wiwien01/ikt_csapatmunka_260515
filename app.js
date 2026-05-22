@@ -97,7 +97,7 @@ function updateLocalStorage() {
 localStorage.setItem('transactions', JSON.stringify(transactions));
 }
 
-// Eseményfigyelő az űrlaphoz --- VIVI
+// Eseményfigyelő az űrlaphoz --- VIVI ejvwvevueuj 
 form.addEventListener('submit', addTransaction);
 
 // Alkalmazás indítása VIVI
