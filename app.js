@@ -57,7 +57,7 @@ money_minus.innerText = `-${expenseTotal} Ft`;
 
 // 4. Új tranzakció hozzáadása (Event Handling) --- BALAZS
 function addTransaction(e) {
-e.preventDefault(); // Ne töltsön újra az oldal ---  VIVI
+e.preventDefault(); // Ne töltsön újra az oldal ---  VIVI dbcbwbuewbbcjew
 
 const textValue = text.value.trim();
 const amountValue = Number(amount.value);
